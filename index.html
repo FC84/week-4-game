@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
+    <link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="instructions">
+        <h2>How to play the game</h2>
+        </br>
+        <ol>
+            <li>You will be assigned a random number at the start.</li>
+            <li>Clicking a Crystal will add to your total score</li>
+            <li>You win by matching your current score to the random number.</li>
+            <li>You lose the game if your current score goes above the random number.</li>
+            <li>The value of each crystal is hidden until clicked.</li>
+            <li>Each values are generated at random during each game instance.</li>
+        </ol>
+		
+		<!-- random number div and wins/losses div -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 randomNumberDiv">
+				<p id="randomTitle"> Score to Match: </p>
+				<h2 id="randomNumber"></h2>
+			</div>
+			<div class="col-md-3 col-md-offset-1 resultsDiv">
+				<p id="winsTotal">Wins: </p>
+				<p id="lossesTotal">losses: </p>
+			</div>
+		</div>
+
+
+
+		<!-- gems -->
+		<div class="row">
+			<div class="col-md-1 col-md-offset-1 gem" value="gem1">
+				<img src="assets/images/bluegem.jpg" class="img-responsive" alt="Bluegem">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem2">
+				<img src="assets/images/greengem.jpg" class="img-responsive" alt="Greengem">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem3">
+				<img src="assets/images/redgem.jpg" class="img-responsive" alt="Redgem">
+			</div>
+			<div class="col-md-1 col-md-offset-1 gem" value="gem4">
+				<img src="assets/images/yellowgem.png" class="img-responsive" alt="Yellowgem">
+			</div>
+		</div>
+
+
+		<!-- score text row -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<p>Your total score is:</p>
+			</div>
+		</div>
+
+		<!-- user score div -->
+		<div class="row">
+			<div class="col-md-3 col-md-offset-1 scoreDiv">
+				<h2 id="userTotal">score</h2>
+			</div>
+		</div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
